@@ -14,10 +14,17 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render title', async () => {
+  it('should render hero title', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, my-portfolio');
+    expect(compiled.querySelector('.hero-title')?.textContent).toContain('Debasish Sahoo');
+  });
+
+  it('should render strengths section', async () => {
+    const fixture = TestBed.createComponent(App);
+    await fixture.whenStable();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelectorAll('.strength-item').length).toBeGreaterThan(0);
   });
 });

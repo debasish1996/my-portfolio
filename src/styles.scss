@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Sora:wght@400;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at 12% 10%, rgba(9, 167, 145, 0.15), transparent 28%),
+    radial-gradient(circle at 88% 22%, rgba(194, 65, 12, 0.14), transparent 31%),
+    linear-gradient(180deg, #f2f5f8 0%, #eef3f8 100%);
+  font-family: 'Manrope', 'Segoe UI', sans-serif;
+  color: #13243c;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.top-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  app-root .topbar {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between;
+  }
+
+  app-root .top-actions {
+    margin-left: auto;
+    gap: 0.45rem;
+    flex-wrap: nowrap;
+  }
+
+  app-root .top-actions .btn-inline {
+    width: 2.2rem !important;
+    min-width: 2.2rem;
+    height: 2.2rem;
+    padding: 0.5rem !important;
+    border-radius: 999px;
+  }
+
+  app-root .top-actions .top-link-label {
+    display: none;
+  }
+
+  app-root .top-actions .btn-inline svg {
+    margin-right: 0 !important;
+  }
+}
