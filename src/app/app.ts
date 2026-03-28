@@ -22,7 +22,7 @@ type ProductHighlight = {
 export class App {
   protected readonly linkedInUrl = 'https://www.linkedin.com/in/debasish-sahoo-35a56817b/';
   protected readonly githubUrl = 'https://github.com/debasish1996';
-  protected readonly profileImagePath = '/my_pic.jpg';
+  protected readonly profileImagePath = '/my_pic_2.jpg';
   protected readonly sideProjectUrl = 'https://bloc-verse.com/';
   protected readonly phoneDisplay = '+91 7008432123';
   protected readonly phoneLink = 'tel:+917008432123';
