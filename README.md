@@ -2,6 +2,10 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.3.
 
+## Live Demo
+
+https://debasish-sahoo-folio.netlify.app/
+
 ## Development server
 
 To start a local development server, run:
